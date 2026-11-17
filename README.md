@@ -1,2 +1,3 @@
-# netheret-project
-This is a school project,.
+# Netheret Support Prototype
+## What it is
+This is a website for my school project.
