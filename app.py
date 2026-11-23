@@ -2,7 +2,6 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-# Example ticket information
 tickets = [
     {
         "id": 1001,
