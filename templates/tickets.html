@@ -1,0 +1,64 @@
+
+{% extends "base.html" %}
+
+{% block title %}Tickets | Netheret{% endblock %}
+
+{% block content %}
+
+<div class="tickets-heading">
+    <h1>Tickets Queue</h1>
+</div>
+
+<section class="tickets-layout">
+
+    <div class="ticket-queue">
+
+        <div class="queue-toolbar">
+            <div class="queue-search">◯ Search Queue...</div>
+            <button class="filter-button">☰ Filters</button>
+        </div>
+
+        {% for ticket in tickets %}
+        <div class="ticket-card">
+            <small>#NET-{{ ticket.id }}</small>
+            <h3>{{ ticket.issue }}</h3>
+            <p>User: {{ ticket.customer }} | {{ ticket.priority }}</p>
+            <p>Status: {{ ticket.status }}</p>
+        </div>
+        {% endfor %}
+
+    </div>
+
+    <div class="ticket-details">
+
+        <h2>VPN Disconnect</h2>
+
+        <p>Ticket ID: #NET-4921</p>
+        <p>User: Apex Corporation</p>
+        <p>Contact: Leroy Jenkins</p>
+
+        <div class="activity-heading">
+            [ Activity Timeline Thread ]
+        </div>
+
+        <div class="activity-entry">
+            <span>[ 9:12 ]</span>
+            <p>Ticket Created via Customer Portal</p>
+        </div>
+
+        <div class="activity-entry">
+            <span>[ 9:15 ]</span>
+            <p>Tier 1: Performed Ping Test; Result: Timeout</p>
+        </div>
+
+        <div class="ticket-actions">
+            <input type="text" placeholder="Add Diagnostic Note...">
+            <button>Escalate to Tier 2</button>
+            <button class="close-button">Close</button>
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

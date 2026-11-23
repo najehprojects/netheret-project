@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{% block title %}Netheret{% endblock %}</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <aside class="sidebar">
+        <div class="brand">
+            <span class="brand-square"></span>
+            <h2>Netheret</h2>
+        </div>
+
+        <div class="nav-section">
+            <p>Main</p>
+            <a href="{{ url_for('dashboard') }}">▦ Overview</a>
+            <a href="{{ url_for('ticket_list') }}">◆ Tickets</a>
+        </div>
+
+        <div class="nav-section">
+            <p>Tools</p>
+            <a href="#">◉ Analytics</a>
+            <a href="#">▣ Knowledge Base</a>
+        </div>
+
+        <div class="nav-section">
+            <p>Operations</p>
+            <a href="#">◉ Schedules</a>
+            <a href="#">▣ Client Accounts</a>
+        </div>
+
+        <a class="logout" href="#">↪ Logout</a>
+    </aside>
+
+    <div class="page-area">
+
+        <header class="topbar">
+            <div class="search-box">
+                ◯ <span>Search or Type Command</span>
+            </div>
+
+            <div class="topbar-actions">
+                <button class="new-project">+ New Project</button>
+                <span>♟</span>
+                <span>⚙</span>
+                <span>●</span>
+            </div>
+        </header>
+
+        <main class="main-content">
+            {% block content %}{% endblock %}
+        </main>
+
+    </div>
+
+</body>
+</html>
