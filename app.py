@@ -4,21 +4,21 @@ app = Flask(__name__)
 
 tickets = [
     {
-        "id": 1001,
+        "id": 1251,
         "customer": "Example Company",
         "issue": "Unable to access email",
         "priority": "High",
         "status": "In Progress"
     },
     {
-        "id": 1002,
+        "id": 3551,
         "customer": "Northwood Ltd",
         "issue": "Printer not responding",
         "priority": "Medium",
         "status": "New"
     },
     {
-        "id": 1003,
+        "id": 3681,
         "customer": "Westfield Office",
         "issue": "Computer running slow",
         "priority": "Low",
