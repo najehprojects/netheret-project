@@ -141,7 +141,7 @@ body {
     font-size: 13px;
 }
 
-/* DASHBOARD STATISTICS */
+/* DASHBOARD */
 
 .stats-grid {
     display: grid;
@@ -170,8 +170,6 @@ body {
 .stat-card small {
     font-size: 11px;
 }
-
-/* DASHBOARD PANELS */
 
 .dashboard-grid {
     display: grid;
@@ -258,7 +256,7 @@ body {
     border-radius: 15px;
 }
 
-/* TICKETS PAGE */
+/* TICKETS */
 
 .tickets-heading {
     margin-bottom: 15px;
@@ -319,8 +317,6 @@ body {
     margin-top: 5px;
 }
 
-/* TICKET DETAILS */
-
 .ticket-details {
     padding: 20px;
 }
@@ -377,7 +373,7 @@ body {
     background: #f2c5cb;
 }
 
-/* RESPONSIVE LAYOUT */
+/* RESPONSIVE */
 
 @media (max-width: 900px) {
     .stats-grid {
