@@ -6,35 +6,38 @@ tickets = [
     {
         "id": 1251,
         "customer": "Example Company",
-        "issue": "Unable to access email",
+        "issue": "Unable to access email.",
         "priority": "High",
         "status": "In Progress"
     },
     {
         "id": 3551,
         "customer": "Northwood Ltd",
-        "issue": "Printer not responding",
+        "issue": "Printer not responding.",
         "priority": "Medium",
         "status": "New"
     },
     {
         "id": 3681,
         "customer": "Westfield Office",
-        "issue": "Computer running slow",
+        "issue": "Computer running slow.",
         "priority": "Low",
         "status": "Resolved"
     },
     {
         "id": 4921,
         "customer": "Apex Corporation",
-        "issue": "VPN Disconnect",
+        "issue": "VPN Disconnect.",
         "priority": "High",
         "status": "In Progress"
     },
 ]
 
+@app.route("/login0")
+def login():
+    return render_template("login.html")
 
-@app.route("/")
+@app.route("/dashboard")
 def dashboard():
     return render_template("dashboard.html", tickets=tickets)
 
